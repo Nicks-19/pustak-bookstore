@@ -246,9 +246,10 @@ export default function App() {
       <AddBookModal
         isOpen={isAddBookOpen}
         onClose={() => setIsAddBookOpen(false)}
-        onBookAdded={() => {
-          loadInitialData();
-          showToast('New book registered with physical shelf coordinates!');
+        onBookAdded={async (newBook) => {
+          await api.createBook(newBook);
+          await loadInitialData();
+          showToast(`"${newBook.title.slice(0, 25)}..." added to inventory!`);
         }}
       />
 
