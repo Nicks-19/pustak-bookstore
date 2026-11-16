@@ -17,3 +17,4 @@ except Exception as e:
     print(f"Serverless init notice: {e}")
 
 from backend.app.main import app
+
