@@ -11,27 +11,6 @@ export default function Navbar({ activeTab, setActiveTab, onOpenAddBook, onOpenS
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-      {/* Top Academic & Student Verification Bar */}
-      <div className="bg-slate-900 text-slate-300 text-xs py-1.5 px-4 sm:px-8 flex justify-between items-center border-b border-slate-800">
-        <div className="flex items-center gap-2">
-          <span className="inline-block w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
-          <span className="font-medium text-slate-200">Full-Stack Mini Project</span>
-          <span className="text-slate-500">•</span>
-          <span className="text-slate-400">FastAPI + SQLite + React</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="font-semibold text-indigo-400">Nikita Sharad Pawar</span>
-          <span className="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[11px] font-mono border border-slate-700">PRN: 202401100018</span>
-          <button 
-            onClick={onOpenDemoHelper}
-            className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-2.5 py-0.5 rounded text-[11px] transition shadow-sm flex items-center gap-1"
-          >
-            <span>Teacher Viva Guide</span>
-            <span>💡</span>
-          </button>
-        </div>
-      </div>
-
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">

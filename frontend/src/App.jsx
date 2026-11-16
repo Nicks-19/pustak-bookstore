@@ -230,14 +230,10 @@ export default function App() {
       <footer className="bg-white border-t border-slate-200 mt-auto py-5 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div>
-            <strong>Pustak</strong>: Academic Bookstore & Circular Inventory Management System
+            <strong>Pustak</strong> — Smart Academic Bookstore & Circular Inventory Management Platform
           </div>
-          <div className="flex items-center gap-3">
-            <span>Student: <strong>Nikita Sharad Pawar</strong></span>
-            <span>•</span>
-            <span className="font-mono">PRN: 202401100018</span>
-            <span>•</span>
-            <span>Roll: A19</span>
+          <div className="text-slate-400">
+            Circular Buyback Engine • Shelf Navigation • Syllabus Bundler • POS
           </div>
         </div>
       </footer>
