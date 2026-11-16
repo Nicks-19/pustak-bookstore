@@ -3,7 +3,8 @@
 **Student Name:** Nikita Sharad Pawar  
 **PRN:** `202401100018` | **Roll No:** `A19`  
 **Course:** Full-Stack Mini Project (Total Marks: 10)  
-**Application Execution Host:** `http://127.0.0.1:8000` (Unified FastAPI + React Build)  
+**Live GitHub Deployment:** [https://nicks-19.github.io/pustak-bookstore/](https://nicks-19.github.io/pustak-bookstore/)  
+**Local Application Host:** `http://127.0.0.1:8000` (Unified FastAPI + React Build)  
 **Interactive API Documentation:** `http://127.0.0.1:8000/docs`
 
 ---

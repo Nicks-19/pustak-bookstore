@@ -75,7 +75,8 @@ Use this guide during your individual evaluation to show your subject teacher ex
 * **What the Teacher Looks For:** Formal documentation PDF, deployment link, automated test results, and clear live demo.
 * **Your Defense & Evidence:**
   * **Formal PDF Report:** 10-page report (`202401100018_Nikita_Sharad_Pawar_Project.pdf`) containing project problem, schema diagrams, test cases, and academic declaration.
-  * **Application Execution Host:** `http://127.0.0.1:8000` (Unified FastAPI + React Build via `run.bat`)
+  * **Live GitHub Deployment URL:** [https://nicks-19.github.io/pustak-bookstore/](https://nicks-19.github.io/pustak-bookstore/)
+  * **Local Host:** `http://127.0.0.1:8000` (Unified FastAPI + React Build via `run.bat`)
   * **Automated Testing:** 12/12 passed integration tests (`backend/run_tests.py`).
   * **Built-in Presentation Support:** "Teacher Viva Guide 💡" modal inside the app and standalone [`presentation.html`](file:///C:/Users/NIKITA%20SHARAD%20PAWAR/.gemini/antigravity/scratch/pustak-bookstore/docs/presentation.html) slide deck.
   * **Expected Mark:** **2 / 2**

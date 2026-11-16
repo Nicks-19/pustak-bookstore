@@ -120,10 +120,10 @@ def generate_pdf(output_path):
     pdf.cell(0, 6, "Pustak - Smart Academic Bookstore & Circular Buyback Platform", 0, 1)
 
     pdf.set_font("Helvetica", "", 9.5)
-    pdf.cell(45, 6, "Execution Host:", 0, 0)
+    pdf.cell(45, 6, "Live Deployment:", 0, 0)
     pdf.set_font("Helvetica", "B", 9.5)
     pdf.set_text_color(79, 70, 229)
-    pdf.cell(0, 6, "http://127.0.0.1:8000 (Unified FastAPI + React Build)", 0, 1)
+    pdf.cell(0, 6, "https://nicks-19.github.io/pustak-bookstore/", 0, 1)
 
     pdf.ln(18)
 
@@ -376,7 +376,7 @@ def generate_pdf(output_path):
     pdf.section_title("8.1 Live Production Deployment")
     pdf.body_p(
         "Pustak is deployed and publicly accessible for teacher evaluation at:\n"
-        "Execution Host: http://127.0.0.1:8000 (Unified FastAPI + React Build)\n"
+        "Live Deployment: https://nicks-19.github.io/pustak-bookstore/\n"
         "Interactive Swagger API Docs: http://127.0.0.1:8000/docs"
     )
 
