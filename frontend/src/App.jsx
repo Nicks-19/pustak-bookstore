@@ -247,9 +247,13 @@ export default function App() {
         isOpen={isAddBookOpen}
         onClose={() => setIsAddBookOpen(false)}
         onBookAdded={async (newBook) => {
-          await api.createBook(newBook);
-          await loadInitialData();
-          showToast(`"${newBook.title.slice(0, 25)}..." added to inventory!`);
+          try {
+            const created = await api.createBook(newBook);
+            setBooks((prev) => [created, ...prev.filter(b => b.isbn !== created.isbn)]);
+            showToast(`✓ "${newBook.title.slice(0, 24)}..." saved to catalog!`);
+          } catch (err) {
+            console.error(err);
+          }
         }}
       />
 

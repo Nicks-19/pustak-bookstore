@@ -35,6 +35,7 @@ class BookCreate(BaseModel):
     section: str = Field(default="Engineering", min_length=2, max_length=50)
     rack_id: str = Field(default="Rack A", min_length=2, max_length=30)
     shelf_level: str = Field(default="Eye Level", min_length=2, max_length=30)
+    cover_image: Optional[str] = Field(default="", max_length=500)
     cover_url: Optional[str] = Field(default="", max_length=500)
 
     @field_validator("isbn")
