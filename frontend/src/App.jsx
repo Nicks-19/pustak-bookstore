@@ -7,7 +7,6 @@ import PosTerminal from './components/PosTerminal';
 import DeadStockDashboard from './components/DeadStockDashboard';
 import ShelfNavigatorModal from './components/ShelfNavigatorModal';
 import AddBookModal from './components/AddBookModal';
-import PresentationHelper from './components/PresentationHelper';
 import { api } from './services/api';
 
 export default function App() {
@@ -21,7 +20,6 @@ export default function App() {
   const [isStoreMapOpen, setIsStoreMapOpen] = useState(false);
   const [targetLocation, setTargetLocation] = useState(null);
   const [isAddBookOpen, setIsAddBookOpen] = useState(false);
-  const [isDemoHelperOpen, setIsDemoHelperOpen] = useState(false);
 
   // Toast feedback
   const [toastMessage, setToastMessage] = useState(null);
@@ -252,11 +250,6 @@ export default function App() {
           loadInitialData();
           showToast('New book registered with physical shelf coordinates!');
         }}
-      />
-
-      <PresentationHelper
-        isOpen={isDemoHelperOpen}
-        onClose={() => setIsDemoHelperOpen(false)}
       />
 
       {/* Toast Notification */}
